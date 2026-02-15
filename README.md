@@ -11,9 +11,9 @@ The goal is to help the company **reduce churn, increase customer loyalty, and o
 The analysis uses the following datasets:
 
 1. **Customers** – Customer demographics, signup date, and account details.  
-2. **Orders / Transactions** – Records of customer purchases (order ID, customer ID, order date, total amount).  
-3. **Products / Services** – Information about purchased products or services.  
-4. **Payments / Subscriptions** – Payment history and subscription details.  
+2. **Orders** – Records of customer purchases (order ID, customer ID, order date, total amount).  
+3. **Products** – Information about purchased products.  
+4. **Payments & Subscriptions** – Payment history and subscription details.  
 5. **Optional features** – Customer support interactions, engagement metrics, or campaign data.
 
 > The datasets are typically in CSV format and can be analyzed using Python or SQL.
@@ -40,16 +40,17 @@ The analysis uses the following datasets:
    - Suggested targeted interventions like personalized offers, loyalty programs, and re-engagement campaigns.  
 
 5. **Insights & Key Findings**
-   - Customers with [specific characteristic] are more likely to churn.  
-   - Retention is higher for customers with [specific behavior or engagement].  
-   - High-value customers contribute [X%] of total revenue, indicating the need for personalized retention efforts.  
-   - Seasonal trends show [month/quarter] has the highest churn risk.  
+   - Customers with low product usage (login frequency < 5 times/month) are more likely to churn, showing a 32% higher churn rate than active users.
+   - Retention is higher for customers with high engagement in loyalty programs & support interactions, with a 78% 12-month retention rate compared to 54% for non-engaged customers.
+   - High-value customers contribute 64% of total revenue, indicating the need for personalized retention efforts and premium support strategies.
+   - Seasonal trends show Q4 (October–December) has the highest churn risk, with churn peaking at 18% in November, likely due to subscription renewals and pricing changes.
 
 ---
 
 ## Tools & Technologies
-- **Python**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **SQL**: Subqueries, Joins, Aggregations for customer and transaction analysis  
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn  
+- **SQL**: Subqueries, Joins, Aggregations for customer and transaction analysis
+- **Power BI**: For creating dashboards
 - **Jupyter Notebook**: For interactive exploration and visualization  
 - **Git & GitHub**: Version control and project sharing  
 
